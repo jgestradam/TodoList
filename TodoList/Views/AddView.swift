@@ -18,6 +18,7 @@ struct AddView: View {
                     .padding(.horizontal)
                     .frame(height: 55)
                     .background(Color.gray)
+                    .opacity(0.5)
                     .cornerRadius(10)
                 
                 Button(action: {
