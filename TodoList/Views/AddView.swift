@@ -19,22 +19,8 @@ struct AddView: View {
     var body: some View {
         ScrollView {
             VStack {
-                TextField("Type something here...", text: $textFieldText)
-                    .fontWeight(.semibold)
-                    .padding(.horizontal)
-                    .frame(height: 55)
-                    .background(.thinMaterial)
-                    .cornerRadius(10)
-                
-                Button {
-                    saveButtonPressed()
-                } label: {
-                    Text("Save".uppercased())
-                        .font(.headline)
-                        .frame(maxWidth: .infinity)
-                        .frame(height: 40)
-                }
-                .buttonStyle(.borderedProminent)
+                textField
+                saveButton
             }
             .padding(14)
         }
@@ -70,5 +56,28 @@ struct AddView_Previews: PreviewProvider {
             AddView()
         }
         .environmentObject(ListViewModel())
+    }
+}
+
+extension AddView {
+    private var textField: some View {
+        TextField("Type something here...", text: $textFieldText)
+            .fontWeight(.semibold)
+            .padding(.horizontal)
+            .frame(height: 55)
+            .background(Color(UIColor.secondarySystemBackground))
+            .cornerRadius(10)
+    }
+    
+    private var saveButton: some View {
+        Button {
+            saveButtonPressed()
+        } label: {
+            Text("Save".uppercased())
+                .font(.headline)
+                .frame(maxWidth: .infinity)
+                .frame(height: 40)
+        }
+        .buttonStyle(.borderedProminent)
     }
 }

@@ -15,6 +15,8 @@
 		5D1EB0E629282E3B00DB85DE /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1EB0E529282E3B00DB85DE /* AddView.swift */; };
 		5D1EB0FC29294BFC00DB85DE /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1EB0FB29294BFC00DB85DE /* ItemModel.swift */; };
 		5D1EB0FF292967E100DB85DE /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1EB0FE292967E100DB85DE /* ListViewModel.swift */; };
+		5D900C542936C7C600C23EE2 /* NoItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D900C532936C7C600C23EE2 /* NoItemsView.swift */; };
+		5D900C562936DC5F00C23EE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D900C552936DC5F00C23EE2 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		5D1EB0E529282E3B00DB85DE /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		5D1EB0FB29294BFC00DB85DE /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		5D1EB0FE292967E100DB85DE /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		5D900C532936C7C600C23EE2 /* NoItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoItemsView.swift; sourceTree = "<group>"; };
+		5D900C552936DC5F00C23EE2 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				5D1EB0E1292828FA00DB85DE /* ListView.swift */,
 				5D1EB0E329282B1F00DB85DE /* ListRowView.swift */,
 				5D1EB0E529282E3B00DB85DE /* AddView.swift */,
+				5D900C532936C7C600C23EE2 /* NoItemsView.swift */,
+				5D900C552936DC5F00C23EE2 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -161,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D900C562936DC5F00C23EE2 /* LaunchScreen.storyboard in Resources */,
 				5D1EB0DA2928283200DB85DE /* Preview Assets.xcassets in Resources */,
 				5D1EB0D72928283200DB85DE /* Assets.xcassets in Resources */,
 			);
@@ -178,6 +185,7 @@
 				5D1EB0FF292967E100DB85DE /* ListViewModel.swift in Sources */,
 				5D1EB0D32928283100DB85DE /* TodoListApp.swift in Sources */,
 				5D1EB0E2292828FA00DB85DE /* ListView.swift in Sources */,
+				5D900C542936C7C600C23EE2 /* NoItemsView.swift in Sources */,
 				5D1EB0E429282B2000DB85DE /* ListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,15 +312,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TodoList/Preview Content\"";
 				DEVELOPMENT_TEAM = 648GL97VZX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Do Stuff ";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -333,15 +345,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TodoList/Preview Content\"";
 				DEVELOPMENT_TEAM = 648GL97VZX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Do Stuff ";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
